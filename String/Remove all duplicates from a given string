@@ -1,0 +1,20 @@
+//Input:
+//Str = geeksforgeeks
+//Output: geksfor
+
+class Solution {
+    String removeDuplicates(String str) {
+        // code here
+        ArrayList<Character> arr=new ArrayList<>();
+        for(int i=0;i<str.length();i++){
+            if(!arr.contains(str.charAt(i))){
+                arr.add(str.charAt(i));
+            }
+        }
+        String s="";
+        for(int j=0;j<arr.size();j++){
+            s=s+arr.get(j);
+        }
+        return s;
+    }
+}
