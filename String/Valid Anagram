@@ -1,0 +1,21 @@
+//Input: s = "anagram", t = "nagaram"
+//Output: true
+
+class Solution {
+    public boolean isAnagram(String s, String t) {
+       char[] tempArrayS = s.toCharArray();
+        char[] tempArrayT = t.toCharArray();
+
+        Arrays.sort(tempArrayS);
+        Arrays.sort(tempArrayT);
+
+        s = new String(tempArrayS);
+        t = new String(tempArrayT);
+
+        if(s.contains(t) && t.contains(s)){
+            return true;
+        }else{
+            return false;
+        } 
+    }
+}
