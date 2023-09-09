@@ -1,0 +1,16 @@
+class Solution{
+    public int maxSubArray(int[] nums) {
+        int maxs=Integer.MIN_VALUE;
+        int currs=0;
+        for(int i=0;i<nums.length;i++){
+            currs=currs+nums[i];
+            if(currs>maxs){
+                maxs=currs;
+            }
+            if(currs<maxs){
+                currs=0;
+            }
+        }
+        return maxs;
+    }
+}
