@@ -1,0 +1,14 @@
+class Solution
+{ 
+    public static int findSum(int A[],int N) 
+    {
+        //code here
+        int sum=0,max=0,min=0;
+        Arrays.sort(A);
+        int indx=0;
+        min=A[indx];
+        max=A[N-1];
+        sum=max+min;
+        return sum;
+    }
+}
