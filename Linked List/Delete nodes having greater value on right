@@ -1,0 +1,20 @@
+class Solution
+{
+    Node compute(Node head)
+    {
+        // your code here
+        Node curr=head;
+        while(curr.next!=null){
+            if(curr.data<curr.next.data){
+                curr.data=curr.next.data;
+                curr.next=curr.next.next;
+                curr=head;
+            }
+            else{
+                curr=curr.next;
+            }
+        }
+        return head;
+    }
+}
+  
