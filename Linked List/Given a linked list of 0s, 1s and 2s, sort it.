@@ -1,0 +1,21 @@
+class Solution
+{
+    //Function to sort a linked list of 0s, 1s and 2s.
+    static Node segregate(Node head)
+    {
+        // add your code here
+        ArrayList<Integer> arr=new ArrayList<>();
+        Node curr=head;
+        while(curr!=null){
+            arr.add(curr.data);
+            curr=curr.next;
+        }
+        Collections.sort(arr);
+        curr=head;
+        for(int i=0;i<arr.size();i++){
+            curr.data=(arr.get(i));
+            curr=curr.next;
+        }
+        return head;
+    }
+}
