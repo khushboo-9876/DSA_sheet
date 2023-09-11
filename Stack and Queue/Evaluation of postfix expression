@@ -1,0 +1,39 @@
+class Solution
+{
+    //Function to evaluate a postfix expression.
+    public static int evaluatePostFix(String S)
+    {
+        // Your code here
+        Stack<Integer> s=new Stack<>();
+        //all characters scan
+        for(int i=0;i<S.length();i++){
+            char c=S.charAt(i);
+            
+            //if character is number then push it
+            if(Character.isDigit(c)){
+                s.push(c-'0');
+            }
+            //if charaacter is not a number its operand then pop the two values for evaluation
+            else{
+                int val1=s.pop();
+                int val2=s.pop();
+                switch(c){
+                    case '+':
+                        s.push(val2+val1);
+                        break;
+                    case '-':
+                        s.push(val2-val1);
+                        break;
+                    case '*':
+                        s.push(val2*val1);
+                        break;
+                    case '/':
+                        s.push(val2/val1);
+                        break;
+                }
+            }
+        }
+        int res=s.pop();
+        return res;
+    }
+}
