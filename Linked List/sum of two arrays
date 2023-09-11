@@ -1,0 +1,30 @@
+class Solution {
+    ArrayList<Integer> findSum(int a[], int b[]) {
+        // code here
+       ArrayList<Integer> ans=new ArrayList<>();
+       int i=a.length-1;
+       int j=b.length-1;
+       int carry=0;
+       
+       while(i>=0 || j>=0){
+           int a2=0;
+           int b2=0;
+           if(i>=0){
+               a2=a[i];
+           }
+           if(j>=0){
+               b2=b[j];
+           }
+           int sum=a2+b2+carry;
+           ans.add(sum%10);
+           carry=sum/10;
+           i--;
+           j--;
+       }
+       if(carry>0){
+           ans.add(carry);
+       }
+       Collections.reverse(ans);
+       return ans;
+    }
+}
