@@ -6,8 +6,8 @@ This repository is organized in a way to help you systematically practice and ma
 Github Link -  https://github.com/khushboo-9876/Xenon_Stack
 
 # Table Of Content 
-  Intoduction
-  Folder Structure 
+  1. Intoduction
+  2. Folder Structure 
 
 
 # Introduction
