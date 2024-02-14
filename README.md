@@ -18,10 +18,12 @@ Github Link -  https://github.com/khushboo-9876/Xenon_Stack
 
 The repository is organized into folders based on different data structures. Each folder contains problems related to that specific data structure. For example:
 
-Array: Problems related to arrays.
-String: Problems related to strings.
-LinkedList: Problems related to linked lists.
-Queue: Problems related to queues.
-Stack: Problems related to stacks.
+1. Array: Problems related to arrays.
+2. String: Problems related to strings.
+3. LinkedList: Problems related to linked lists.
+4. Queue: Problems related to queues.
+5.Stack: Problems related to stacks.
+
+
 Feel free to contribute by adding more problems, solutions, or improving existing ones.
 
