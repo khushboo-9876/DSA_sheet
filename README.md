@@ -3,7 +3,7 @@
 This a practice DSA Sheet that will help to clear the concepts of Data Structures and algorithms.
 This repository is organized in a way to help you systematically practice and master DSA concepts.
 
-Github Link -  https://github.com/khushboo-9876/Xenon_Stack
+Github Link -  https://github.com/khushboo-9876/DSA_sheet
 
 # Table Of Content 
   1. Intoduction
